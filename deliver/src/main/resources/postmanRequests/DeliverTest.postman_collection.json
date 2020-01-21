@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "9be5dc32-9b2b-4eeb-8bf1-f7239d904a43",
+		"name": "DeliverTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/deliver/contas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/deliver/contas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deliver",
+						"contas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/deliver/insert/:nome/:valor/:vencimento/:pagamento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/deliver/insert/:nome/:valor/:vencimento/:pagamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deliver",
+						"insert",
+						":nome",
+						":valor",
+						":vencimento",
+						":pagamento"
+					],
+					"variable": [
+						{
+							"key": "nome",
+							"value": "agua"
+						},
+						{
+							"key": "valor",
+							"value": "50"
+						},
+						{
+							"key": "vencimento",
+							"value": "2020-03-02"
+						},
+						{
+							"key": "pagamento",
+							"value": "2020-03-06"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
